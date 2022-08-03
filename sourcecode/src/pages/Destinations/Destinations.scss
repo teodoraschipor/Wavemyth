@@ -1,0 +1,97 @@
+.destinations-page {
+
+    position: relative;
+
+    &__steps {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 72px;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img~p::first-letter {
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 17px;
+            }
+
+            &:last-child {
+
+                background: #272B35;
+                border: 1px solid #181D26;
+                border-radius: 3px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 63px;
+                padding-right: 63px;
+
+                p {
+
+                    &:first-child {
+                        font-weight: 700;
+                        font-size: 51.22px;
+                    }
+
+                    &:last-child {
+                        font-size: 22.66px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__details {
+
+        text-align: justify;
+        flex-wrap: wrap;
+
+        &__title {
+            font-size: 30px;
+            &::first-letter {
+                font-weight: 700;
+            }
+        }
+
+        hr {
+            height: 1px;
+            border: none;
+            background-color: #3A424E;
+            width: 529px;
+            margin-top: 12px;
+            margin-bottom: 35px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .green-button {
+        margin-bottom: 334px;
+        margin-top: 98px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .destinations-page__steps .section:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .destinations-page__steps .section:last-child {
+        padding: 20px;
+        p:first-child {
+            font-size: 18px;
+        }
+        p:last-child {
+            font-size: 14px;
+        }
+    }
+    .destinations-page__details hr {
+        width: 100%;
+    }
+}

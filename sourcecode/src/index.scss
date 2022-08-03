@@ -1,0 +1,84 @@
+@import "/src/utils/variables";
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Ubuntu';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $page-background;
+}
+
+.header, .home-page, .destinations-page, .spaceships-page, .cart-page, .footer {
+  * { 
+    color: $text-color;
+  }
+}
+
+.header, .footer {
+  width: 1057px;
+  padding-left: calc((100% - 1057px) / 2);
+  padding-right: calc((100% - 1057px) / 2);
+}
+
+.home-page, .destinations-page, .spaceships-page, .cart-page {
+  width: 1057px;    
+  min-height: calc(100vh - 354px);
+  background-color: $page-background;
+}
+
+p {
+  margin: 0;
+}
+
+.green-button {
+
+  background-color: $green-button;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 21px;
+  padding-right: 21px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $green-button-hover;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 1200px) {  
+
+  .header, .footer {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .home-page, .destinations-page, .spaceships-page, .cart-page {
+    width: 60%;
+    min-height: calc(100vh - 510px);
+    background-color: $page-background;
+  }
+  
+  .green-button {
+    font-size: 14px;
+    padding: 5px;
+  }
+}

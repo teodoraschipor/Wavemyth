@@ -1,0 +1,26 @@
+@import "../../utils/variables";
+
+.footer {
+    
+    background-color: $header-footer-background;
+    height: 294px;
+    font-size: 13px;
+    font-weight: 300;
+
+    p {
+        width: 350px;
+        &:first-child {
+            padding-top: 38.5px;
+            padding-bottom: 21.5px;
+        }
+        &:nth-child(2) {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer p {
+        width: fit-content;
+    }
+}
