@@ -1,6 +1,6 @@
 # Wavemyth
 
-For this test I used **html**, **sass** for styling, **js**, **redux** for application state. I also implemented the carousel by adding random/extra images and texts, navigation/routing using **react-router-dom** and a simple **responsive design**.  
+For this React test I used **html**, **sass** for styling, **js**, **redux** for application state. I also implemented the carousel by adding random/extra images and texts, navigation/routing using **react-router-dom** and a simple **responsive design**.  
 
 You can see the requested page by clicking **"Destinations"** from the menu bar or by **"/destinations"** url.  
 
